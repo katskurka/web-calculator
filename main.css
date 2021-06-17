@@ -2,33 +2,142 @@
 
 body {
   background-image: linear-gradient(to right, #614385, #516395);
-  
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  display: flex;
+  margin: 0;
+}
+
+.calculator {
+  background: rgb(47,79,79, 0.7);
+  border-radius: 10px; 
+  width: 400px;
+  min-height: 400px;
+  box-shadow: 0 5px 25px -5px rgba(0, 0, 0, 0.7);
+
 }
 
 #title {
   font-family: 'Black Ops One', sans-serif;
   color: #fff;
-  text-align: center;
+  text-align: top;
   font-size: 2em;
 }
 
 #title p {
   margin: 1px;
   font-size: 0.8em;
+  text-align: top;
 }
 
-#calculator {
-  text-align: center; /* why does item-align not work here */
-  justify-content: center;
-  background-color: rgb(47,79,79, 0.7);
-  border-radius: 5px;
-  width: 400px;
-  height: 300px;
-  margin: 200px;
-  padding: 30px 30px 10px;
-  
-}
-
-#display {
+.display {
   background-color: rgba(119,136,153, 0.7);
+  color: #000;
+  display: flex;
+  margin: 0;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.display h2 {
+  margin: 0;
+  padding: 5px;
+  font-size: 30px;
+  font-family: 'Black Ops One', sans-serif;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  padding: 10px;
+}
+
+#one {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+#two {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+#three {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+#four {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#five {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#six {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+#seven {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#eight {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#nine {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+#zero {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+#plus {
+  grid-column: 4;
+  grid-row: 4;
+}
+
+#subtract {
+  grid-column: 4;
+  grid-row: 3;
+}
+
+#multiply {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+#divide {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+#decimal {
+  grid-column: 2s;
+  grid-row: 4;
+}
+
+#eval {
+  grid-column: 1/ span 4;
+  grid-row: 5;
+}
+
+#clear-button {
+  grid-column: 1;
+  grid-row: 4;
 }
