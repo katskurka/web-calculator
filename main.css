@@ -21,7 +21,7 @@ body {
 #title {
   font-family: 'Black Ops One', sans-serif;
   color: #fff;
-  text-align: top;
+  text-align: center;
   font-size: 2em;
 }
 
@@ -74,10 +74,6 @@ button:hover {
 
 .operator {
   background-color: rgb(157, 228, 151);
-}
-
-.equal-operator {
-  background-color: rgb(242, 167, 148);
 }
 
 #one {
@@ -159,6 +155,7 @@ button:hover {
 #eval {
   grid-column: 1/ span 4;
   grid-row: 5 / span 2;
+  background-color: rgb(242, 167, 148);
 }
 
 #clear-button {
