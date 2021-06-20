@@ -53,8 +53,31 @@ body {
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   gap: 5px;
-  padding: 10px;
+  padding: 20px;
+}
+
+button {
+min-height: 50px;
+font-size: 25px;
+font-weight: 200;
+border-radius: 10px;
+font-family: 'Black Ops One', sans-serif;
+background-color: rgb(146, 208, 234);
+cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(110%);
+}
+
+.operator {
+  background-color: rgb(157, 228, 151);
+}
+
+.equal-operator {
+  background-color: rgb(242, 167, 148);
 }
 
 #one {
@@ -110,6 +133,7 @@ body {
 #plus {
   grid-column: 4;
   grid-row: 4;
+  
 }
 
 #subtract {
@@ -134,10 +158,11 @@ body {
 
 #eval {
   grid-column: 1/ span 4;
-  grid-row: 5;
+  grid-row: 5 / span 2;
 }
 
 #clear-button {
   grid-column: 1;
   grid-row: 4;
+  background-color: rgb(157, 228, 151);
 }
