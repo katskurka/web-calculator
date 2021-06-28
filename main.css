@@ -22,12 +22,14 @@ body {
   color: #fff;
   text-align: center;
   font-size: 2em;
+  margin: -10px;
 }
 
 .title p {
   margin: 1px;
   font-size: 0.8em;
   text-align: top;
+  padding: 10px;
 }
 
 .display {
