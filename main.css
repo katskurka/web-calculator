@@ -5,7 +5,6 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  display: flex;
   margin: 0;
 }
 
@@ -15,17 +14,17 @@ body {
   width: 400px;
   min-height: 400px;
   box-shadow: 0 5px 25px -5px rgba(0, 0, 0, 0.7);
-
+  margin: auto;
 }
 
-#title {
+.title {
   font-family: 'Black Ops One', sans-serif;
   color: #fff;
   text-align: center;
   font-size: 2em;
 }
 
-#title p {
+.title p {
   margin: 1px;
   font-size: 0.8em;
   text-align: top;
